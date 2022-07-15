@@ -1,0 +1,190 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* .con{
+    display: flex ;
+} */
+body{
+background-color: rgba 0.9, 0.9, 0.9, 1.0;
+font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    border: 2px solid rebeccapurple;
+    width: 310px;
+    max-width: 100%;
+    margin: 0 auto;
+    background-image: url(./images/image\ 1.png);
+    object-fit: cover;
+
+    position: relative;
+    height: auto;
+    max-height: 100%;
+
+}
+
+.content{
+    background-color: white;
+    width: 85%;
+    max-width: 100%;
+    margin: 20px auto;
+    /* position: relative; */
+    top: 12px;
+
+}
+
+
+@media (min-width: 700px) {
+
+
+    .container{
+        width: 95%;
+        margin-top: 1%;
+    }
+}
+
+
+
+.header{
+    background-color: #232B3D;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 95%;
+    position: relative;
+    top: 10px;
+    margin: auto;
+    border-radius: 4px;
+}
+.m-a-v{
+    font-size: 18px;
+    line-height: 21.09px;
+    font-weight: 700;
+    font-family: roboto;
+
+}
+
+.total-vote{
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: 2rem;
+    /* line-height: 76.17px; */
+    color: rgba(240, 248, 255, 0.593);
+}
+
+.empty{
+    /* content: ''; */
+    display: block;
+    width: 99%;
+    height: 6px;
+    /* color:rgba(240, 248, 255, 0.593) ; */
+    position: relative;
+    background-color: rgba(240, 248, 255, 0.593);
+    margin: .6rem .2rem .01rem;
+    border-radius: 20px;
+}
+
+
+/* aja and pepe, check out the meaning as you hear it in a song in a radio station */
+
+
+
+.amount-volume{
+    /* content: ''; */
+    display: block;
+    position: absolute;
+    width: calc(0%);
+    height: 6px;
+    background-color:  #F7B354;
+    ;
+    bottom: 15px;
+    left: 18px;
+    border-radius: 20px;
+
+    /* margin: .6rem .2rem .01rem; */
+}
+
+.voting-center{
+    display: grid;
+    text-align: center;
+    row-gap: 15px;
+}
+
+@media (min-width:700px) {
+    .voting-center{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.candidate{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    width: 80%;
+    border:  1px solid rgba(176, 176, 176, 0.393);
+    position: relative;
+    /* left: 15px; */
+    margin: auto;
+}
+
+.candidate:hover{
+    transition: 100ms ease-out;
+    border:  2px solid rgba(176, 176, 176, 0.393);
+}
+
+.vote-boxes{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgba(176, 176, 176, 0.393);
+    border-radius: 8px;
+    margin-top: .5rem;
+}
+
+.reduce,
+.amount-numb,
+.increase{
+    border: 0.1px solid rgba(176, 176, 176, 0.233);
+    padding: 6px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-radius: 2px;
+    
+}
+
+
+.reduce:hover,
+.amount-numb:hover,
+.increase:hover{
+    background-color: rgba(176, 176, 176, 0.233);
+    cursor: pointer;
+    transition: 300ms ease-in-out;  
+}
+
+.view-ldbtn{
+    background-color: #1E2A5A;
+    text-align: center;
+    padding: 0.8em 2.5em;
+    border-radius: 10px;
+    border-style: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 1.5rem;
+    font-size: 1.13rem;
+}
+
+.view-ldbtn:hover{
+    background-color: #040d32;
+    transition: 0.2s ease-in-out;
+}
+
+.view-ldbtn a{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+
+}
